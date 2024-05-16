@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto px-4 py-8">
+        <span><img src="./weather-app.png" alt="icon" class="size-10 gap-4"></span>
+        <span><h1 class="text-5xl font-bold mb-4 gap-6"><b><u>Weather App</u></b></h1></span>
+        
+            
+    <!-- Search City Weather -->
+            <div class="bg-white p-9 rounded shadow-2xl flex items-center gap-3 flex-col mx-auto">
+                <h2 class="text-3xl font-semibold mb-2"><u>Search City Weather</u></h2>
+                <input type="text" id="cityinput" class="border rounded px-2 py-1 mb-4" placeholder="Enter city name">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded" id="searchbtn">Search</button>
+                <div id="search-results" class="mt-4"></div>
+            </div>
+
+    <!-- Output Card -->
+        <div id="outputcard" class="output bg-white p-6 rounded shadow-md ">
+            <div class="citynamecard">
+                <span><p class="text-lg font-bold">CITY NAME :</p></span><span><p id="cityname" class="text-lg "></p></span><br>
+            </div>
+            <div class="countrynamecard">
+                <span><p class="text-lg font-bold">COUNTRY NAME :</p></span><span><p id="countryname" class="text-lg"></p></span>
+            </div>
+
+    <!-- Temperature -->
+            <div class="tempcard mt-4">
+                <span><p class="text-lg font-bold">TEMPERATURE :</p></span><span><p id="temp" class="text-lg "></p></span>
+            </div>
+    <!-- Time and Date -->
+        <span><p class="mt-4 text-lg font-bold">LOCALTIME :</p></span><span><p id="loctime" class="mt-4 text-lg"></p></span>
+        </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
